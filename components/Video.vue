@@ -1,9 +1,9 @@
 <template>
   <SlidevVideo
-    :controls="controls"
-    :autoplay="autoplay"
-    :loop="loop"
-    :muted="muted"
+    :controls="props.controls"
+    :autoplay="props.autoplay"
+    :loop="props.loop"
+    :muted="props.muted"
     w="100%"
     h="90%"
     mt="4"
@@ -13,12 +13,20 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps, withDefaults } from 'vue';
 
-defineProps<{
-  controls?: boolean;
-  autoplay?: boolean;
-  loop?: boolean;
-  muted?: boolean;
-}>();
+const props = withDefaults(
+  defineProps<{
+    controls?: boolean;
+    autoplay?: boolean;
+    loop?: boolean;
+    muted?: boolean;
+  }>(),
+  {
+    controls: true,
+    autoplay: false,
+    loop: false,
+    muted: false,
+  }
+);
 </script>

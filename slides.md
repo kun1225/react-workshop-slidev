@@ -55,3 +55,7 @@ layout: center
 ---
 src: ./pages/ch-5-1.md
 ---
+
+---
+src: ./pages/ch-5-2.md
+---

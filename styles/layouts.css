@@ -2,6 +2,7 @@
   --slidev-theme-primary: #31e8ff;
   --slidev-code-background: #2e3440;
   --slidev-code-foreground: #d8dee9;
+  --slidev-code-tab-text-color: #d8dee9;
 }
 
 .slidev-slide-content {
@@ -97,7 +98,15 @@
 }
 
 .slidev-code-wrapper {
-  code {
-    line-height: 1.7;
+  max-height: 80vh;
+  overflow: auto;
+
+  code,
+  pre {
+    line-height: 1.7 !important;
   }
+}
+
+.slidev-code-wrapper::-webkit-scrollbar {
+  display: none;
 }
