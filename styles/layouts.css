@@ -97,16 +97,27 @@
   }
 }
 
-.slidev-code-wrapper {
-  max-height: 80vh;
+.slidev-code-wrapper,
+.slidev-code {
+  max-height: 400px;
   overflow: auto;
 
   code,
   pre {
     line-height: 1.7 !important;
   }
+
+  &::-webkit-scrollbar {
+    height: 0px;
+    width: 4px;
+    background: var(--slidev-code-foreground);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: white;
+  }
 }
 
-.slidev-code-wrapper::-webkit-scrollbar {
-  display: none;
+.slidev-code-wrapper > .slidev-code {
+  max-height: initial;
 }
