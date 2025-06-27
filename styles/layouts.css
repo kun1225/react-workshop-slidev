@@ -3,6 +3,9 @@
   --slidev-code-background: #2e3440;
   --slidev-code-foreground: #d8dee9;
   --slidev-code-tab-text-color: #d8dee9;
+
+  --slidev-code-font-size: 0.9rem;
+  --slidev-code-line-height: 1.6;
 }
 
 .slidev-slide-content {
@@ -12,28 +15,34 @@
 }
 
 .slidev-layout {
-  @apply flex flex-col w-full;
+  @apply px-12 py-6 w-full text-base;
+
+  ol,
+  ul {
+    @apply mt-2 mb-0.5;
+  }
 
   p + h2,
   ul + h2,
+  ol + h2,
   table + h2 {
     @apply mt-10;
   }
 
   h1 {
-    @apply text-4xl mb-4 -ml-[0.05em] text-primary;
+    @apply text-3xl mb-4 text-primary font-black;
   }
 
   h2 {
-    @apply text-3xl mb-2;
+    @apply text-2xl my-2 font-semibold;
   }
 
   h3 {
-    @apply text-2xl mb-2;
+    @apply text-xl my-2;
   }
 
   h4 {
-    @apply text-xl;
+    @apply text-lg;
   }
 
   h5 {
@@ -99,7 +108,7 @@
   @apply text-center;
 
   h1 {
-    @apply text-6xl font-500 leading-20;
+    @apply text-6xl font-bold mb-8;
   }
 }
 

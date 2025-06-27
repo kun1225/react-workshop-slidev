@@ -23,7 +23,7 @@ const props = withDefaults(
   {
     controls: true,
     autoplay: false,
-    loop: false,
+    loop: true,
     muted: false,
   }
 );
