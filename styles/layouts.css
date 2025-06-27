@@ -12,6 +12,8 @@
 }
 
 .slidev-layout {
+  @apply flex flex-col w-full;
+
   p + h2,
   ul + h2,
   table + h2 {
@@ -27,7 +29,7 @@
   }
 
   h3 {
-    @apply text-2xl;
+    @apply text-2xl mb-2;
   }
 
   h4 {
@@ -58,6 +60,10 @@
   h1 {
     @apply text-6xl leading-20;
   }
+}
+
+.slidev-layout.two-cols-header {
+  @apply gap-x-4;
 }
 
 .slidev-layout.fact {

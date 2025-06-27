@@ -3,7 +3,7 @@
 theme: ../styles
 
 # some information about your slides (markdown enabled)
-title: React 3 種優化方式
+title: 優化 React Re-render 的三大方式
 
 fonts:
   sans: Noto Sans TC
@@ -26,20 +26,36 @@ drawings:
 layout: center
 ---
 
-# React 3 種優化方式
+# React Re-render 3 大優化方式
 
 ## ThisWeb - Kun
 
 <!--
 開頭先打招呼，下一張投影片自我介紹和宣傳 IG
+
+嗨，大家好，我是 ThisWeb
+
+前面講師的分享都很精彩，有關於 AI 以及 Next.js 的踩坑經驗
+
+我今天的主題也是 React 有關
+
+是 React Re-render 3 大優化方式
+
+會有這個主題是因為我當工程師這幾年，發現有很多工程師其實不是真的了解 React 的運作原理
+
+導致寫出一些效能不好的程式碼或是看到有很多不必要的寫法
+
+所以想藉由這次機會，分享一下 React 基本的運作機制，以及我們要怎麼優化 re-render 這件事
 -->
 
+---
+layout: two-cols-header
 ---
 
 # ThisWeb
 
 <!--
-這裡要自我介紹
+開始前，我先簡單自我介紹一下
 -->
 
 ---
