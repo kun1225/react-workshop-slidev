@@ -5,12 +5,12 @@
         v-if="props?.number"
         class="!my-0 !leading-none font-antonio font-black text-[var(--primary-highlight)] text-[140px] tracking-[-0.15em] -skew-x-16"
       >
-        {{ `${props.number}.` }}
+        {{ `${props.number} .` }}
       </p>
     </div>
     <div class="flex flex-col gap-1">
       <span class="text-mute text-3xl text-left">{{ props.subtitle }}</span>
-      <h1 class="!mb-4">
+      <h1 class="!mb-4 !text-7xl">
         <slot />
       </h1>
     </div>

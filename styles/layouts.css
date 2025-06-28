@@ -32,12 +32,16 @@
   @apply px-12 py-8 w-full text-base text-pretty;
 
   * {
-    transition: all 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
   }
 
   ol,
   ul {
-    @apply mt-2 mb-0.5;
+    @apply mt-1 mb-0.5;
+  }
+
+  li:has(:is(ul, ol)) {
+    @apply mt-4;
   }
 
   p + h2,
@@ -45,6 +49,13 @@
   ol + h2,
   table + h2 {
     @apply mt-10;
+  }
+
+  p + h3,
+  ul + h3,
+  ol + h3,
+  table + h3 {
+    @apply mt-6;
   }
 
   strong {
@@ -111,7 +122,7 @@
   @apply text-center;
 
   h1 {
-    @apply text-7xl font-black mb-8;
+    @apply text-8xl font-black mb-8;
   }
 
   h2 {
