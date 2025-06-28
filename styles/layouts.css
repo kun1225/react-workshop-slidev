@@ -1,11 +1,24 @@
+.font-antonio {
+  font-family: 'antonio', sans-serif;
+}
+
 :root {
-  --slidev-theme-primary: #31e8ff;
+  --primary: #31e8ff;
+  --secondary: #fdd321;
+  --mute: #78909c;
+  --primary-highlight: #134f5c;
+  --secondary-highlight: #8f7b31;
+  --card-background: #333340;
+
+  --slidev-theme-primary: var(--primary);
+
   --slidev-code-background: #2e3440;
   --slidev-code-foreground: #d8dee9;
   --slidev-code-tab-text-color: #d8dee9;
 
   --slidev-code-font-size: 0.9rem;
   --slidev-code-line-height: 1.6;
+  --slidev-code-padding: 0.75rem 1rem;
 }
 
 .slidev-slide-content {
@@ -14,8 +27,13 @@
   @apply text-white;
 }
 
+/* Layout */
 .slidev-layout {
-  @apply px-12 py-6 w-full text-base;
+  @apply px-12 py-8 w-full text-base text-pretty;
+
+  * {
+    transition: all 0.2s ease-in-out;
+  }
 
   ol,
   ul {
@@ -29,8 +47,17 @@
     @apply mt-10;
   }
 
+  strong {
+    @apply relative text-[var(--secondary)];
+
+    /* &::before {
+      content: '';
+      @apply absolute inset-x-0 top-3.5 bottom-0.5 bg-[var(--secondary-highlight)] -z-10;
+    } */
+  }
+
   h1 {
-    @apply text-3xl mb-4 text-primary font-black;
+    @apply text-[2rem] mb-4 text-primary font-black;
   }
 
   h2 {
@@ -62,12 +89,33 @@
   }
 }
 
-.slidev-layout.cover,
-.slidev-layout.intro {
-  @apply h-full grid;
+.slidev-layout.cover {
+  @apply flex flex-col items-center justify-center text-center;
 
   h1 {
-    @apply text-6xl leading-20;
+    @apply text-7xl font-black mb-8;
+  }
+
+  h2 {
+    @apply text-4xl font-bold mb-8;
+  }
+}
+
+.slidev-layout.section {
+  h1 {
+    @apply text-4xl font-500 leading-20;
+  }
+}
+
+.slidev-layout.center {
+  @apply text-center;
+
+  h1 {
+    @apply text-7xl font-black mb-8;
+  }
+
+  h2 {
+    @apply text-4xl font-bold mb-8;
   }
 }
 
@@ -75,52 +123,15 @@
   @apply gap-x-4;
 }
 
-.slidev-layout.fact {
-  @apply text-center grid h-full;
-
-  h1 {
-    @apply text-8xl font-700;
-  }
-  h1 + p {
-    @apply font-700 text-2xl;
-  }
-}
-.slidev-layout.statement {
-  @apply text-center grid h-full;
-
-  h1 {
-    @apply text-6xl font-700;
-  }
-}
-.slidev-layout.quote {
-  @apply grid h-full;
-
-  h1 + p {
-    @apply mt-2;
-  }
-}
-.slidev-layout.section {
-  h1 {
-    @apply text-4xl font-500 leading-20;
-  }
-}
-.slidev-layout.center {
-  @apply text-center;
-
-  h1 {
-    @apply text-6xl font-bold mb-8;
-  }
+/* Code */
+.slidev-code-wrapper {
+  @apply rounded-lg;
 }
 
 .slidev-code-wrapper,
 .slidev-code {
   max-height: 400px;
   overflow: auto;
-
-  code,
-  pre {
-    line-height: 1.7 !important;
-  }
 
   &::-webkit-scrollbar {
     height: 0px;
@@ -135,4 +146,13 @@
 
 .slidev-code-wrapper > .slidev-code {
   max-height: initial;
+}
+
+/* Components */
+
+.card {
+  ul,
+  li {
+    line-height: 2;
+  }
 }

@@ -12,8 +12,9 @@ fonts:
 
 default:
   layout: section
+  transition: slide-left
 
-transition: fade
+transition: slide-left
 mdc: true
 selectable: true
 
@@ -24,6 +25,18 @@ drawings:
 #  ogImage: https://cover.sli.dev
 
 layout: center
+---
+
+---
+src: ./pages/ch-0.md
+---
+
+---
+src: ./pages/ch-1.md
+---
+
+layout: center
+
 ---
 
 # React Re-render 3 大優化方式
