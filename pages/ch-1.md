@@ -1,6 +1,6 @@
 ---
 layout: center
-transition: slide-left
+transition: blur-in
 ---
 
 # React 的心智模型
@@ -10,7 +10,7 @@ layout: center
 ---
 
 <CenterTitle number="1" subtitle="React 核心觀念">
-  <span class="font-mono">UI = f(state)</span>
+  <span class="font-mono italic !leading-[0]">UI = f(state)</span>
 </CenterTitle>
 
 <!--

@@ -9,19 +9,18 @@
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const container = ref(null);
 const centerHeight = ref(0);
+let resizeObserver = null;
 
-onMounted(async () => {
-  await nextTick();
-
+const calculateHeight = () => {
   const containerEl = container.value;
+  if (!containerEl || !containerEl.parentElement) return;
+
   const parentEl = containerEl.parentElement;
-
   const parentStyle = getComputedStyle(parentEl);
-
   const parentHeight = parentEl.offsetHeight;
 
   const paddingTop = parseFloat(parentStyle.paddingTop);
@@ -36,7 +35,22 @@ onMounted(async () => {
   }, 0);
 
   centerHeight.value = parentHeight - siblingsHeight - totalPadding;
+};
 
-  containerEl.style.height = `${centerHeight.value}px`;
+onMounted(() => {
+  // 延遲計算，確保所有元素都渲染完成
+  setTimeout(calculateHeight, 0);
+
+  // 監聽父元素尺寸變化
+  if (container.value?.parentElement) {
+    resizeObserver = new ResizeObserver(calculateHeight);
+    resizeObserver.observe(container.value.parentElement);
+  }
+});
+
+onUnmounted(() => {
+  if (resizeObserver) {
+    resizeObserver.disconnect();
+  }
 });
 </script>

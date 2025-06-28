@@ -19,6 +19,7 @@ const props = withDefaults(
     autoplay?: boolean;
     loop?: boolean;
     muted?: boolean;
+    width?: string;
   }>(),
   {
     controls: true,

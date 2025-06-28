@@ -8,9 +8,9 @@
         {{ `${props.number} .` }}
       </p>
     </div>
-    <div class="flex flex-col gap-1">
+    <div class="flex flex-col items-start gap-1">
       <span class="text-mute text-3xl text-left">{{ props.subtitle }}</span>
-      <h1 class="!mb-4 !text-7xl">
+      <h1 class="!mb-0 !leading-none !text-7xl whitespace-nowrap">
         <slot />
       </h1>
     </div>

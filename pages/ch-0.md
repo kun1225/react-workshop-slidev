@@ -1,6 +1,6 @@
 ---
 layout: cover
-transition: slide-left
+transition: blur-in
 ---
 
 <p class="text-xl !mb-12 text-[var(--mute)]">ThisWeb 請網這邊走</p>
