@@ -31,6 +31,20 @@ ThisWeb - Kun
 
 # ThisWeb - Kun
 
+分享前端相關的技術、特效、經驗，以及我自己的轉職歷程
+
+<HStack class="h-7/9 overflow-hidden !gap-16">
+  <div v-click>
+    <img src="/thisweb-ig.png" />
+  </div>
+  <div v-click>
+    <img src="/thisweb-threads.png" />
+  </div>
+  <div v-click>
+    <img src="/thisweb-site.png" />
+  </div>
+</HStack>
+
 <!--
 那開始前，我先簡單自我介紹一下
 
