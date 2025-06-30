@@ -21,31 +21,38 @@ const calculateHeight = () => {
 
   const parentEl = containerEl.parentElement;
   const parentStyle = getComputedStyle(parentEl);
-  const parentHeight = parentEl.offsetHeight;
+  const parentInnerHeight = parentEl.clientHeight;
 
   const paddingTop = parseFloat(parentStyle.paddingTop);
   const paddingBottom = parseFloat(parentStyle.paddingBottom);
   const totalPadding = paddingTop + paddingBottom;
 
   const siblings = Array.from(parentEl.children).filter(
-    child => child !== containerEl
+    (child) => child !== containerEl
   );
-  const siblingsHeight = siblings.reduce((total, sibling) => {
-    return total + sibling.offsetHeight;
+  const siblingsHeightWithMargin = siblings.reduce((total, sibling) => {
+    const siblingStyle = getComputedStyle(sibling);
+    const marginTop = parseFloat(siblingStyle.marginTop);
+    const marginBottom = parseFloat(siblingStyle.marginBottom);
+    // offsetHeight 包含 height + padding + border
+    return total + sibling.offsetHeight + marginTop + marginBottom;
   }, 0);
 
-  centerHeight.value = parentHeight - siblingsHeight - totalPadding;
+  centerHeight.value = parentInnerHeight - siblingsHeightWithMargin;
 };
 
 onMounted(() => {
-  // 延遲計算，確保所有元素都渲染完成
-  setTimeout(calculateHeight, 0);
+  // 為了確保所有樣式和元素都已就緒，延遲執行是必要的
+  // 使用 requestAnimationFrame 會比 setTimeout(..., 0) 在時機上更適合畫面繪製
+  requestAnimationFrame(() => {
+    calculateHeight();
 
-  // 監聽父元素尺寸變化
-  if (container.value?.parentElement) {
-    resizeObserver = new ResizeObserver(calculateHeight);
-    resizeObserver.observe(container.value.parentElement);
-  }
+    // 監聽父元素尺寸變化
+    if (container.value?.parentElement) {
+      resizeObserver = new ResizeObserver(calculateHeight);
+      resizeObserver.observe(container.value.parentElement);
+    }
+  });
 });
 
 onUnmounted(() => {

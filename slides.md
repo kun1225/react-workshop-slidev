@@ -22,16 +22,22 @@ drawings:
 # open graph
 # seoMeta:
 #  ogImage: https://cover.sli.dev
+
+layout: cover
 ---
+
+<p class="text-xl !mb-12 text-[var(--mute)]">ThisWeb 請網這邊走</p>
+
+# React 效能優化實戰工作坊
+
+## 3 小時掌握 React 進階技術 x 底層思維
 
 ---
 src: ./pages/ch-0.md
-hide: true
 ---
 
 ---
 src: ./pages/ch-1.md
-hide: true
 ---
 
 ---

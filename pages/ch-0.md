@@ -1,13 +1,3 @@
----
-layout: cover
-transition: blur-in
----
-
-<p class="text-xl !mb-12 text-[var(--mute)]">ThisWeb 請網這邊走</p>
-
-# React 效能優化實戰工作坊
-
-## 3 小時掌握 React 進階技術 x 底層思維
 
 ---
 

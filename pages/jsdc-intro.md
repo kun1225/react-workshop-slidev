@@ -14,9 +14,9 @@ ThisWeb - Kun
 
 嗨，大家好，我是 ThisWeb
 
-前面講師的分享都很精彩，有關於 AI 以及 Next.js 的踩坑經驗
+剛剛 Michael 的分享很精彩，monorepo 是現在蠻流行的技術
 
-我今天的主題也是 React 有關
+那我今天的主題是和 React 有關
 
 是 React Re-render 3 大優化方式
 

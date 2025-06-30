@@ -18,7 +18,7 @@ transition: blur-in
 <div class="relative w-4/5 mx-auto">
 <img src="/jsdc/workshop-info.png" alt="workshop info" class="rounded-lg shadow-lg" />
 <img src="/jsdc/workshop-qrcode.png" alt="qrcode" class="size-[148px] absolute bottom-14 right-6 rounded-lg" />
-<p class="absolute left-10.5 bottom-8 text-sm font-sans text-shadow-lg font-black">輸入折扣碼 THISWEB-JSDC <span class="text-[var(--secondary)]">再折 300 元</span></p>
+<p class="absolute left-10.5 bottom-8 text-sm font-sans text-shadow-lg font-black">輸入折扣碼 <span class="text-[var(--secondary)] text-lg">JSDC</span> 再折 <span class="text-xl">300</span> 元</p>
 
 </div>
 </div>
