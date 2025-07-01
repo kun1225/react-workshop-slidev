@@ -3,17 +3,17 @@ layout: center
 transition: blur-in
 ---
 
-<ChapterTitle chapter="1" >
+<ThemeTItle chapter="1" >
 React 的心智模型
-</ChapterTitle>
+</ThemeTItle>
 
 ---
 layout: center
 ---
 
-<CenterTitle number="1" subtitle="React 核心觀念">
+<SectionTitle number="1" subtitle="React 核心觀念">
   <span class="font-mono italic !leading-[0]">UI = f(state)</span>
-</CenterTitle>
+</SectionTitle>
 
 <!--
 相信你們在學 React 的過程中，可能會聽過這句話
@@ -183,9 +183,9 @@ Re-render 也是今天工作坊的一大主題，我們會在後面更詳細的�
 layout: center
 ---
 
-<CenterTitle number="2" subtitle="React Re-render 的">
+<SectionTitle number="2" subtitle="React Re-render 的">
 本質是什麼？
-</CenterTitle>
+</SectionTitle>
 
 <!--
 延續前面的主題，我們知道當 state 改變時，React 會重新渲染（Re-render）整個 component，以產生對應的新 UI。
@@ -288,9 +288,9 @@ Re-render 的本質只是「根據新的 state，重新產生新的 UI 描述（
 layout: center
 ---
 
-<CenterTitle number="3" subtitle="Re-render 之後">
+<SectionTitle number="3" subtitle="Re-render 之後">
 Commit Phase (階段)
-</CenterTitle>
+</SectionTitle>
 
 <!--
 當 React 完成 Re-render，產出新的 Virtual DOM 後，接下來就會進入 Commit Phase，這時 React 才會真正去「d更新畫面」和執行副作用。
