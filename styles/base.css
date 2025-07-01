@@ -1,0 +1,46 @@
+.font-antonio {
+  font-family: 'antonio', sans-serif;
+}
+
+:root {
+  --primary: #31e8ff;
+  --secondary: #fdd321;
+  --mute: #78909c;
+  --primary-highlight: #134f5c;
+  --secondary-highlight: #8f7b31;
+  --card-background: #333340;
+
+  --slidev-theme-primary: var(--primary);
+
+  --slidev-code-background: #2e3440;
+  --slidev-code-foreground: #d8dee9;
+  --slidev-code-tab-text-color: #d8dee9;
+
+  --slidev-code-font-size: 0.9rem;
+  --slidev-code-line-height: 1.6;
+  --slidev-code-padding: 0.75rem 1rem;
+}
+
+.slidev-code-wrapper {
+  @apply rounded-lg;
+}
+
+.slidev-code-wrapper,
+.slidev-code {
+  max-height: 400px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    height: 0px;
+    width: 4px;
+    background: var(--slidev-code-foreground);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: white;
+  }
+}
+
+.slidev-code-wrapper > .slidev-code {
+  max-height: initial;
+}

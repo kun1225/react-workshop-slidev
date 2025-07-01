@@ -3,14 +3,14 @@
     <div>
       <p
         v-if="props?.number"
-        class="!my-0 !leading-none font-antonio font-black text-[var(--primary-highlight)] text-[140px] tracking-[-0.15em] -skew-x-16"
+        class="!my-0 !leading-none font-antonio font-black text-[var(--primary-highlight)] text-[160px] tracking-[-0.15em] -skew-x-16"
       >
         {{ `${props.number} .` }}
       </p>
     </div>
     <div class="flex flex-col items-start gap-1">
       <span class="text-mute text-3xl text-left">{{ props.subtitle }}</span>
-      <h1 class="!mb-0 !leading-none !text-7xl whitespace-nowrap">
+      <h1 class="!leading-none !text-7xl whitespace-nowrap">
         <slot />
       </h1>
     </div>

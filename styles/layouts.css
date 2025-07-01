@@ -1,71 +1,9 @@
-.font-antonio {
-  font-family: 'antonio', sans-serif;
-}
-
-:root {
-  --primary: #31e8ff;
-  --secondary: #fdd321;
-  --mute: #78909c;
-  --primary-highlight: #134f5c;
-  --secondary-highlight: #8f7b31;
-  --card-background: #333340;
-
-  --slidev-theme-primary: var(--primary);
-
-  --slidev-code-background: #2e3440;
-  --slidev-code-foreground: #d8dee9;
-  --slidev-code-tab-text-color: #d8dee9;
-
-  --slidev-code-font-size: 0.9rem;
-  --slidev-code-line-height: 1.6;
-  --slidev-code-padding: 0.75rem 1rem;
-}
-
 .slidev-slide-content {
   background: url('/bg.png') no-repeat center center;
   background-size: cover;
   @apply text-white;
 }
 
-/* Animation */
-.blur-in-enter-active,
-.blur-in-leave-active {
-  transition:
-    opacity 0.2s linear,
-    filter 0.2s linear;
-}
-
-.blur-in-enter-from,
-.blur-in-leave-to {
-  opacity: 0;
-  filter: blur(4px);
-}
-
-.slidev-vclick-target {
-  position: relative;
-  transition:
-    transform 0.2s ease-in-out,
-    visibility 0.2s linear,
-    opacity 0.2s linear,
-    filter 0.2s linear;
-  visibility: visible;
-  transform-origin: left center;
-}
-
-.slidev-layout.center {
-  .slidev-vclick-target {
-    transform-origin: center;
-  }
-}
-
-.slidev-vclick-hidden {
-  opacity: 0;
-  visibility: hidden;
-  filter: blur(4px);
-  transform: scale(0.98);
-}
-
-/* Layout */
 .slidev-layout {
   @apply px-12 py-8 w-full text-base text-pretty;
 
@@ -153,8 +91,6 @@
 }
 
 .slidev-layout.center {
-  @apply text-center;
-
   h1 {
     @apply text-7xl font-black mb-8 leading-24;
   }
@@ -166,38 +102,4 @@
 
 .slidev-layout.two-cols-header {
   @apply gap-x-4;
-}
-
-/* Code */
-.slidev-code-wrapper {
-  @apply rounded-lg;
-}
-
-.slidev-code-wrapper,
-.slidev-code {
-  max-height: 400px;
-  overflow: auto;
-
-  &::-webkit-scrollbar {
-    height: 0px;
-    width: 4px;
-    background: var(--slidev-code-foreground);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: white;
-  }
-}
-
-.slidev-code-wrapper > .slidev-code {
-  max-height: initial;
-}
-
-/* Components */
-
-.card {
-  ul,
-  li {
-    line-height: 2;
-  }
 }

@@ -3,7 +3,9 @@ layout: center
 transition: blur-in
 ---
 
-# React 的心智模型
+<ChapterTitle chapter="1" >
+React 的心智模型
+</ChapterTitle>
 
 ---
 layout: center
