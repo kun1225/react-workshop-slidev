@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-end gap-6">
+  <div class="flex items-end gap-6 -translate-y-4">
     <div>
       <p
         v-if="props?.number"

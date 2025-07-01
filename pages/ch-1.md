@@ -352,7 +352,13 @@ commit phase 的底層實現非常複雜，其實我們也沒必要真的去看�
 
 <v-click>
 
-## 為什麼要理解 UI = f(state) 和 re-render？
+<span v-mark="{ color: 'var(--secondary)', at: 1 }">Re-render 就是重新執行 Function Component</span>
+
+</v-click>
+
+<v-click>
+
+### 為什麼要理解 UI = f(state) 和 Re-render？
 
 </v-click>
 
@@ -372,7 +378,7 @@ commit phase 的底層實現非常複雜，其實我們也沒必要真的去看�
 
 <v-click>
 
-## React 的運作流程
+### React 的運作流程
 
 </v-click>
 
@@ -386,7 +392,7 @@ commit phase 的底層實現非常複雜，其實我們也沒必要真的去看�
 
 <v-click>
 
-## **Trigger <span font-mono>-></span> Re-render <span font-mono>-></span> Commit**
+**Trigger <span font-mono>-></span> Re-render <span font-mono>-></span> Commit**
 
 </v-click>
 
