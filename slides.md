@@ -3,8 +3,13 @@
 theme: ../styles
 
 # some information about your slides (markdown enabled)
-title: 優化 React Re-render 的三大方式
+title: React 效能優化實戰工作坊
+titleTemplate: '%s | ThisWeb'
+author: ThisWeb
 
+# TODO: close presenter mode
+presenter: true
+download: false
 fonts:
   sans: Noto Sans TC
   serif: Noto Serif TC
@@ -17,11 +22,20 @@ default:
 mdc: true
 selectable: true
 
+colorSchema: light
+
 drawings:
   persist: false
-# open graph
-# seoMeta:
-#  ogImage: https://cover.sli.dev
+
+seoMeta:
+  ogTitle: ThisWeb - React 效能優化實戰工作坊
+  ogDescription: 3 小時掌握 React 進階技術 x 底層思維
+  ogImage: /og-img.png
+  ogUrl: https://thisweb.dev
+  twitterTitle: ThisWeb - React 效能優化實戰工作坊
+  twitterDescription: 3 小時掌握 React 進階技術 x 底層思維
+  twitterImage: /og-img.png
+  twitterUrl: https://thisweb.dev
 
 layout: cover
 ---
