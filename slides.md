@@ -8,7 +8,8 @@ titleTemplate: '%s | ThisWeb'
 author: ThisWeb
 
 # TODO: close presenter mode
-presenter: true
+presenter: dev
+browserExporter: dev
 download: false
 fonts:
   sans: Noto Sans TC
@@ -67,6 +68,10 @@ src: ./pages/ch-2-3.md
 ---
 
 ---
+src: ./pages/ch-3-1.md
+---
+
+---
 src: ./pages/jsdc-intro.md
 hide: true
 ---
@@ -86,6 +91,3 @@ src: ./pages/ch-5-3.md
 ---
 src: ./pages/jsdc-end.md
 ---
-
----
-

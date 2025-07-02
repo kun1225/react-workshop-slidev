@@ -13,6 +13,8 @@ transition: blur-in
 -->
 
 ---
+hide: true
+---
 
 <div class="h-full flex items-center justify-center border-4 border-[var(--primary-highlight)] rounded-xl p-4">
 <div class="relative w-4/5 mx-auto">

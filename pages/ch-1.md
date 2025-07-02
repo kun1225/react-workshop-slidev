@@ -3,15 +3,15 @@ layout: center
 transition: blur-in
 ---
 
-<ThemeTitle chapter="1" >
-React 的心智模型
+<ThemeTitle number="1" >
+React 的核心模型
 </ThemeTitle>
 
 ---
 layout: center
 ---
 
-<ChapterTitle number="1" subtitle="React 核心觀念">
+<ChapterTitle number="1" subtitle="React 核心觀念 - 聲明式">
   <span class="font-mono italic !leading-[0]">UI = f(state)</span>
 </ChapterTitle>
 
@@ -25,7 +25,7 @@ React 是聲明式（declarative）框架
 
 ---
 
-# 聲明式是什麼意思？
+# UI = f(state) 、聲明式是什麼意思？
 
 <v-clicks>
 
