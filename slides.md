@@ -49,6 +49,10 @@ src: ./pages/ch-2-2.md
 ---
 
 ---
+src: ./pages/ch-2-3.md
+---
+
+---
 src: ./pages/jsdc-intro.md
 hide: true
 ---

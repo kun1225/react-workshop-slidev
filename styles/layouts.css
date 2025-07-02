@@ -106,7 +106,7 @@
   .col-left,
   .col-right {
     > * {
-      @apply !mt-0;
+      @apply :first-child:!mt-0;
     }
   }
 }
