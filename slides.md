@@ -7,10 +7,12 @@ title: React 效能優化實戰工作坊
 titleTemplate: '%s | ThisWeb'
 author: ThisWeb
 
-# TODO: close presenter mode
 presenter: dev
 browserExporter: dev
 download: false
+
+lineNumbers: true
+
 fonts:
   sans: Noto Sans TC
   serif: Noto Serif TC
@@ -89,11 +91,15 @@ src: ./pages/ch-5-1.md
 ---
 
 ---
-src: ./pages/ch-5-2.md
+src: ./pages/ch-5-3.md
 ---
 
 ---
-src: ./pages/ch-5-3.md
+src: ./pages/ch-5-4.md
+---
+
+---
+src: ./pages/ch-5-5.md
 ---
 
 ---
