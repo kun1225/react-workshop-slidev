@@ -188,52 +188,108 @@ React 是怎麼運作的？
   </h1>
 
   <div class="flex gap-8 my-auto font-bold">
-    <Card class="basis-1/3">
-      <template #header>
-        React 的心智模型
+    <Card class="basis-1/2 border-b-4 border-r-4 border-[var(--primary-highlight)]" v-click>
+      <template #header >
+        一、React 的心智模型
       </template>
-      <template #content>
-        <ol>
+        <ol class="text-sm mx-auto w-fit">
           <li>React 的核心運作觀念</li>
           <li>為什麼 React 需要 Re-render？</li>
           <li>Re-render 的本質是什麼？</li>
         </ol>
-      </template>
     </Card>
-    <Card class="basis-1/3">
+    <Card class="basis-1/2 border-b-4 border-r-4 border-[var(--primary-highlight)]" v-click>
       <template #header>
-        State & Effect 用途與陷阱
+        二、State & Effect 用途與陷阱
       </template>
-      <template #content>
-        <ol>
+        <ol class="text-sm mx-auto w-fit">
           <li>useState 常見錯誤解析</li>
           <li>如何正確管理 state？</li>
-          <li>2-3 useEffect 的真正意義與陷阱</li>
+          <li>useEffect 的真正意義與陷阱</li>
+          <li class="text-[var(--secondary)]">中場休息</li>
         </ol>
-      </template>
     </Card>
-    <Card class="basis-1/3">
+  </div>
+
+</div>
+
+<!--
+今天工作坊的流程分成 6 個主題
+
+前兩個部分會先從 React 的核心觀念以及運作開始，
+分別是 (照著大綱念
+-->
+
+---
+
+<div class="h-full flex flex-col">
+  <h1>
+    工作坊流程大綱
+  </h1>
+
+  <div class="flex gap-8 my-auto font-bold">
+    <Card class="basis-1/2" v-click>
       <template #header>
-        4 種觸發 Re-Render 的場景
+         三、4 種觸發 Re-Render 的場景
       </template>
-      <template #content>
-        <ol>
+        <ol class="text-sm mx-auto w-fit">
           <li>Re-render 為什麼會造成效能問題？</li>
           <li>4 種觸發 Re-render 的場景</li>
         </ol>
+    </Card>
+    <Card class="basis-1/2" v-click>
+      <template #header>
+        四、React 效能觀察與診斷
       </template>
+        <ol class="text-sm mx-auto w-fit">
+          <li>console.log 的正確使用</li>
+          <li>React DevTools 的正確使用</li>
+          <li>React Scan 效能觀察工具</li>
+          <li class="text-[var(--secondary)]">中場休息</li>
+        </ol>
     </Card>
 
   </div>
 
 </div>
 
+---
+
+<div class="h-full flex flex-col">
+  <h1>
+    工作坊流程大綱
+  </h1>
+
+  <div class="flex gap-8 my-auto font-bold">
+    <Card class="basis-1/2" v-click>
+      <template #header>
+        五、5 種記憶化策略與技巧
+      </template>
+        <ol class="text-sm mx-auto w-fit">
+          <li>狀態下移與拆分</li>
+          <li>內容上移的技巧與應用場景</li>
+          <li>useMemo / useCallback 正確使用與誤區</li>
+          <li>React.memo 的常見錯誤與策略</li>
+          <li>useContext 的最佳使用方式與技巧</li>
+        </ol>
+    </Card>
+    <Card class="basis-1/2" v-click>
+      <template #header>
+        六、React 的底層設計
+      </template>
+        <ol class="text-sm mx-auto w-fit">
+          <li>Reconciliation & Diffing</li>
+          <li>Key 值的真正意義</li>
+          <li>在組件裡宣告其他組件的問題</li>
+          <li class="text-[var(--secondary)]">QA 時間</li>
+        </ol>
+    </Card>
+  </div>
+  
+</div>
+
 <!--
-今天工作坊的流程大致分為 6 個部分
-...
+如果沒問題，我們就正式開始今天的第一章節：
 
-
-如果你準備好，我們就正式開始今天的第一章節：
-
-React 的核心模型：「UI = f(state)」
+React 的核心運作觀念
 -->

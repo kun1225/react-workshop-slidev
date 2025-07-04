@@ -82,11 +82,6 @@ src: ./pages/ch-4.md
 ---
 
 ---
-src: ./pages/jsdc-intro.md
-hide: true
----
-
----
 src: ./pages/ch-5-1.md
 ---
 
@@ -111,6 +106,5 @@ src: ./pages/ch-6.md
 ---
 
 ---
-src: ./pages/jsdc-end.md
-hide: true
+src: ./pages/end.md
 ---
