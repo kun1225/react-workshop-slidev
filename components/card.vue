@@ -14,7 +14,7 @@
       <slot name="header" />
     </header>
 
-    <div class="whitespace-wrap px-6">
+    <div class="whitespace-wrap px-6 w-fit mx-auto">
       <slot name="default" />
     </div>
   </div>

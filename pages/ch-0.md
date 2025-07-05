@@ -24,7 +24,9 @@
 
 <v-click>
 
-**明明已經寫出功能了，卻好像還是不太了解 react**
+明明已經寫出功能了，卻好像還是不太了解 react
+<br/>
+**React 的真正門檻，不在語法，在於你是否熟悉他的機制與思維**
 
 </v-click>
 
@@ -48,10 +50,14 @@
 [click]
 或是可能有過多的 re-render 等等。
 
+[click]
 明明已經寫出功能了，卻好像還是不太了解 react 常常被揪出問題
 
 
-這就是我們今天這堂課要解決的核心問題 — React 的真正門檻，不在語法，在於你是否熟悉他的機制與思維
+這就是我們今天這個工作坊要解決的核心問題 — 
+
+
+React 的真正門檻，不在語法，在於你是否熟悉他的機制與思維
 -->
 
 ---
@@ -135,7 +141,7 @@
   不只是語法
 </span>
 
-幫助你建立一套理解 React、駕馭 React 的思維模型。
+幫助你建立一套理解 React 的思維模型。了解陷阱以及優化方式。
 
 ## 從根本開始
 
@@ -188,14 +194,14 @@ React 是怎麼運作的？
   </h1>
 
   <div class="flex gap-8 my-auto font-bold">
-    <Card class="basis-1/2 border-b-4 border-r-4 border-[var(--primary-highlight)]" v-click>
+    <Card class="basis-1/2 border-b-4 border-r-4 border-[var(--primary-highlight)]" >
       <template #header >
         一、React 的心智模型
       </template>
         <ol class="text-sm mx-auto w-fit">
           <li>React 的核心運作觀念</li>
-          <li>為什麼 React 需要 Re-render？</li>
-          <li>Re-render 的本質是什麼？</li>
+          <li>Render Phase 的本質是什麼？</li>
+          <li>Commit Phase 做了哪些事情？</li>
         </ol>
     </Card>
     <Card class="basis-1/2 border-b-4 border-r-4 border-[var(--primary-highlight)]" v-click>
@@ -228,7 +234,7 @@ React 是怎麼運作的？
   </h1>
 
   <div class="flex gap-8 my-auto font-bold">
-    <Card class="basis-1/2" v-click>
+    <Card class="basis-1/2" >
       <template #header>
          三、4 種觸發 Re-Render 的場景
       </template>
@@ -261,9 +267,9 @@ React 是怎麼運作的？
   </h1>
 
   <div class="flex gap-8 my-auto font-bold">
-    <Card class="basis-1/2" v-click>
+    <Card class="basis-1/2" >
       <template #header>
-        五、5 種記憶化策略與技巧
+        五、5 種優化的策略與技巧
       </template>
         <ol class="text-sm mx-auto w-fit">
           <li>狀態下移與拆分</li>
