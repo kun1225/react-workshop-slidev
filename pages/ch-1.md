@@ -338,11 +338,11 @@ commit phase 會真正更新 DOM，讓畫面反映新的狀態
 
 <v-click>
 
-<p class="text-center pt-4">
+<div class="text-center pt-4">
 
 **Commit Phase 不可被中斷**
 
-</p>
+</div>
 
 </v-click>
 
