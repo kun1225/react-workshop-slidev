@@ -62,6 +62,8 @@ layout: cover
 -->
 
 ---
+hide: true
+---
 
 # ThisWeb - Kun
 
