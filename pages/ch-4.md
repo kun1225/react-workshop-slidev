@@ -435,21 +435,3 @@ layout: center
 
 那我們就進入下個單元囉
 -->
-
-```jsx
-function ticketPrice(age, useCoupon) {
-  let price;
-
-  if (age < 18) {
-    price = 1500;
-  } else {
-    price = 2000;
-  }
-
-  if ((useCouponId = '1')) {
-    price = price - 500;
-  }
-
-  return price;
-}
-```
